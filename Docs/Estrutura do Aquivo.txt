@@ -1,0 +1,26 @@
+NoteBooks
+├── Data                            # Pasta contendo arquivos de dados
+├── Docs                            # Documentos relacionados ao projeto
+│   ├── Imagens                     # Possíveis futuras imagens
+│   └── Estrutura do Arquivo.txt    # Arquivo explicando a estrutura das pastas
+│
+├── Materias                        # Pasta para rascunhos de matérias (Enem principalmente)
+│   └── Matematica.ipynb           
+│   
+├── PDFs                            # Pasta para PDFs de estudo de diversas matérias
+│
+│
+├── Tools                           # Pasta para programas e ferramentas
+│   ├── Excel                       # Pasta para arquivos relacionados ao Excel
+│   └── Tableau                     # Pasta para arquivos relacionados ao Tableau
+│
+├── Codes                           # Pasta para códigos em geral
+│   ├── Python                      # Pasta para códigos Python
+│   │   └── DataScience             # Códigos e notebooks sobre Data Science em Python
+│   └── JavaScript                  # Pasta para códigos JavaScript
+│       ├── Frontend                # Códigos relacionados ao frontend em JavaScript
+│       └── Backend                 # Códigos relacionados ao backend em JavaScript
+│           └── NodeJS_API          # Notebook sobre uma API em Node.js
+├── .gitattributes                  # Arquivo Git para especificar tratamento de arquivos binários
+├── LICENSE                         # Arquivo de licença do projeto
+└── README.md                       # Documentação principal do projeto
