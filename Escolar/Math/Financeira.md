@@ -1,7 +1,27 @@
+# ***Table of Contents*** <!-- omit in toc -->
+- [**Porcentagem**](#porcentagem)
+- [**Valorização**](#valorização)
+- [**Juros**](#juros)
+  - [***Juros Simples***](#juros-simples)
+  - [***Juros Compostos***](#juros-compostos)
+- [**Sistemas de amortização**](#sistemas-de-amortização)
+  - [***Sistema de Pagamento único***](#sistema-de-pagamento-único)
+  - [***Sistema de Pagamentos variáveis***](#sistema-de-pagamentos-variáveis)
+  - [***Sistema Americano***](#sistema-americano)
+  - [***Sistema de Amortização Constante (SAC)***](#sistema-de-amortização-constante-sac)
+  - [***Sistema Price ou Francês (PRICE)***](#sistema-price-ou-francês-price)
+  - [***Sistema de Amortização Misto (SAM)***](#sistema-de-amortização-misto-sam)
+  - [***Sistema Alemão***](#sistema-alemão)
+- [**Equivalência de capitais**](#equivalência-de-capitais)
+  - [**Fluxos regulares**](#fluxos-regulares)
+  - [**Fluxos irregulares**](#fluxos-irregulares)
+
+---
+
 # **Porcentagem**
 
 Na garrafa de mostarda esta escrito que em uma porção de 12g tem 4% de Sódio.
-
+<!-- no toc -->
 ### **Fórmula**:
 
 Quanto uma ***Porcentagem*** representa = $\frac{Porcentagem \times Total}{100}$
@@ -37,6 +57,8 @@ Quanto uma ***Parte*** representa: $\frac{Parte}{Total} \times 100$
     ~0,44 * 100
 
     -> 44,5% 
+
+<!-- no toc -->
 ---
 
 # **Valorização**
@@ -55,30 +77,24 @@ $\frac{Valor Final - Valor Inicial}{Valor Inicial} \times 100$
 
     -> 123,6% 
 ---
-
-# **Juros Compostos**
+# **Juros**
 
 *"Juros são sempre calculados sobre o saldo devedor!"*
 
-Suponha que você tenha investido **um capital inicial de R$1000** em uma conta de investimento com **juros compostos de 5%** ao **ano**. **Após 3 anos**, qual será o valor do seu investimento?
+É um acréscimo calculado sobre o valor inicial de uma aplicação financeira ou de uma compra feita a crédito.
 
-### **Fórmula**
+**Tendo duas formulas:**
 
-$Juros Apurados = Capital \times (1 + \frac{Taxa Juros}{100}) ^n$
+$Juros Simples = Capital \times (1 + \frac{Taxa Juros}{100}\times n)$
 
-Onde:
+`Que aumentam em cima do valor inicial. Tendo ele como valor fixo.`
 
-$n$ é o número de períodos de capitalização
+---
 
-### *Exemplo*:
+$Juros Compostos = Capital \times (1 + \frac{Taxa Juros}{100}) ^n$
 
-    Rendimento = 1000*(1+0,05)^3
-    1000*(1,05)^3
-    1000*1,157625
-    -> R$ 1157,625 
+`Que aumentam o junto ao valor inicial. Aumentando o Capital de acordo com a passagem de tempo.`
 
-    Valor Atual = 1000 + 1157,625
-    -> R$ 2157,625 
 ---
 
 ## ***Juros Simples***
@@ -104,19 +120,51 @@ Onde:
     -> R$ 2010,800 
 ---
 
+## ***Juros Compostos***
+
+Suponha que você tenha investido **um capital inicial de R$1000** em uma conta de investimento com **juros compostos de 5%** ao **ano**. **Após 3 anos**, qual será o valor do seu investimento?
+
+### **Fórmula**
+
+$Juros Apurados = Capital \times (1 + \frac{Taxa Juros}{100}) ^n$
+
+Onde:
+
+$n$ é o número de períodos de capitalização
+
+### *Exemplo*:
+
+    Rendimento = 1000*(1+0,05)^3
+    1000*(1,05)^3
+    1000*1,157625
+    -> R$ 1157,625 
+
+    Valor Atual = 1000 + 1157,625
+    -> R$ 2157,625 
+---
+
 # **Sistemas de amortização**
 
 Processo para extinção de dividas através de pagamentos periódicos em um determinado prazo
 
 Os principais sistemas de amortização são:
 
-1. [**Sistema de Pagamento único**](#sistema-de-pagamento-único)
-2. [**Sistema de Pagamentos variáveis**](#sistema-de-pagamentos-variáveis)
-3. [**Sistema Americano**](#sistema-americano)
-4. [**Sistema de Amortização Constante (SAC)**](#sistema-de-amortização-constante-sac)
-5. [**Sistema Price ou Francês (PRICE)**](#sistema-price-ou-francês-price)
-6. [**Sistema de Amortização Misto (SAM)**](#sistema-de-amortização-misto-sam)
-7. [**Sistema Alemão**](#sistema-alemão)
+- [**Porcentagem**](#porcentagem)
+- [**Valorização**](#valorização)
+- [**Juros**](#juros)
+  - [***Juros Simples***](#juros-simples)
+  - [***Juros Compostos***](#juros-compostos)
+- [**Sistemas de amortização**](#sistemas-de-amortização)
+  - [***Sistema de Pagamento único***](#sistema-de-pagamento-único)
+  - [***Sistema de Pagamentos variáveis***](#sistema-de-pagamentos-variáveis)
+  - [***Sistema Americano***](#sistema-americano)
+  - [***Sistema de Amortização Constante (SAC)***](#sistema-de-amortização-constante-sac)
+  - [***Sistema Price ou Francês (PRICE)***](#sistema-price-ou-francês-price)
+  - [***Sistema de Amortização Misto (SAM)***](#sistema-de-amortização-misto-sam)
+  - [***Sistema Alemão***](#sistema-alemão)
+- [**Equivalência de capitais**](#equivalência-de-capitais)
+  - [**Fluxos regulares**](#fluxos-regulares)
+  - [**Fluxos irregulares**](#fluxos-irregulares)
 
 Em **todos** os sistemas de amortização, o valor das **parcelas** é a soma dos **juros** do saldo devedor no período com o valor amortizado.
 
@@ -347,90 +395,3 @@ Os juros são pagos antecipadamente com prestações iguais, exceto o primeiro p
 ## **Fluxos regulares**
 
 ## **Fluxos irregulares**
-
-
-# **Probabilidade**
-
-Probabilidade de cair um numero par em um Dado de 6 lados.
-
-### **Fórmula**
-
-$Probabilidade = \frac{Favoráveis}{Possíveis}$
-
-### *Exemplo*:
-
-    Total Favoráveis = {2, 4, 6}
-    Total Possíveis = {1, 2, 3, ..., 6}
-
-    Probabilidade = 3/6
-    Probabilidade = 1/2
-    1/2 = 0,5 -> 50% 
-    Probabilidade de $\frac{3}{6}$ ou $\frac{1}{2}$, 50% de chance de cair um número par.
-
----
-
-## ***Probabilidade Composta***
-
-> ***A probabilidade dos eventos são independentes***
-
-Probabilidade de obter um número par em ambos os lançamentos de dois dados.
-
-### **Fórmula**
-
-$P(A) \times P(B) \times P(C)...$
-
-Onde:
-
-- $P(A)$ probabilidade de um evento A
-- $P(B)$ probabilidade de um evento B
-- $P(C)$ probabilidade de um evento C
-
-
-### *Exemplo*:
-
-    P(Número Par) = 1/2
-    P(Número Par Dois Dados) = 1/2 * 1/2
-    = 1/4 -> 25%
-
-    P(Número Par Três Dados) = 1/2 * 1/2 * 1/2
-    = 1/8 ->  12,5%
-
-    P(Número Par Três Dados Diferentes) = 2/4 * 3/6 * 10/20
----
-
-## ***Probabilidade Condicional***
-
-> ***Quando a probabilidade dos eventos são dependentes***
-
-"Uma moeda comum foi lançada três vezes"
-Qual é a probabilidade de se obter exatamente duas caras sabendo que o primeiro resultado foi cara?
-
-### **Fórmula**
-
-$P(A∣B)=\frac{P(A∩B)}{P(B)}$
-
-Onde:
-
-- $(B)$ é o condicionante.
-- $P(A∣B)$ é a probabilidade condicional de A dado B.
-- $P(A∩B)$ é a probabilidade de ambos A e B ocorrerem (a interseção de A e B).
-- $P(B)$ é a probabilidade de B ocorrer.
-
-### *Exemplo*:
-
-    P(A) Possui EXATAMENTE duas CARAS
-    P(B) Primeiro lançamento foi CARA
-
-    H = Cara
-    T = Coroa
-
-    B = {(H, T, T); (H, H T); (H, T H); (H, H, H)}
-    n(B) = 4
-
-    A∩B → O resultado possui exatamente duas caras, e o primeiro resultado é cara.
-
-    A∩B = {(H, H T); (H, T H)}
-    n(A∩B) = 2
-
-    -> P(A∣B) = 2/4 ->> 1/2 
----
