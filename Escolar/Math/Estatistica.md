@@ -2,6 +2,10 @@
 - [**Probabilidade**](#probabilidade)
   - [***Probabilidade Composta***](#probabilidade-composta)
   - [***Probabilidade Condicional***](#probabilidade-condicional)
+- [***Análise combinatória***](#análise-combinatória)
+  - [**Principio Multiplicativo (Arranjo)**](#principio-multiplicativo-arranjo)
+  - [**Permutação**](#permutação)
+  - [**Combinação**](#combinação)
 - [***Medidas de tendência***](#medidas-de-tendência)
   - [***Média***](#média)
   - [***Mediana***](#mediana)
@@ -18,7 +22,7 @@ Probabilidade de cair um numero par em um Dado de 6 lados.
 
 ### **Fórmula**
 
-$Probabilidade = \frac{Favoráveis}{Possíveis}$
+$$Probabilidade = \frac{Favoráveis}{Possíveis}$$
 
 ### *Exemplo*:
 
@@ -70,7 +74,8 @@ Qual é a probabilidade de se obter exatamente duas caras sabendo que o primeiro
 
 ### **Fórmula**
 
-$P(A∣B)=\frac{P(A∩B)}{P(B)}$
+$$P(A∣B)=\frac{P(A∩B)}{P(B)}$$
+
 
 Onde:
 
@@ -97,6 +102,182 @@ Onde:
 
     -> P(A∣B) = 2/4 ->> 1/2
 ---
+# ***Análise combinatória***
+
+## **Principio Multiplicativo (Arranjo)**
+"Técnica do tracinho"
+
+De quantos modos posso ir a uma festa se tenho:
+- 2 camisas
+- 4 calças
+- 3 sapatos
+
+### **Fórmula**
+
+Evento A pode ocorrer de m maneiras diferentes;
+Evento B pode ocorrer de n maneiras diferentes;
+Número total de resultados possíveis é:
+
+$$m \times n$$
+
+### *Exemplo*:
+
+    - 2 camisas
+    - 4 calças
+    - 3 sapatos
+    
+    2 * 4 * 3 = 24
+
+### *Exemplo 2*:
+"De quantos modos duas pessoas, podem sentar em uma sala com 20 cadeiras"
+
+    1º pessoa - 20 possibilidades
+    2º pessoa - 19 possibilidades
+
+    20 * 19 = 380
+
+### *Exemplo 3*:
+"Uma sala possui 3 portas, de quantas maneiras a sala pode estar ABERTA"
+
+    1º porta - 2 possibilidades (Aberta & Fechada)
+    2º porta - 2 possibilidades
+    3º porta - 2 possibilidades
+
+    2 * 2 * 2 = 8
+
+Analisando combinações possíveis:
+
+    8 - Maneiras
+    A = Aberta
+    F = Fechada
+
+    (A - F - F, 
+    F - A - F, 
+    F - F - A, 
+    ... 
+    F - F - F)
+
+    F.F.F a sala esta fechada, dentro das 8 maneiras esta é a única na qual a sla estará fechada
+
+    8 - 1 = 7 Maneiras da Sala Estar ABERTA
+
+---
+
+## **Permutação**
+*"A ordem importa"*
+
+### **Permutação Simples:**
+*"Não há nenhum elemento repetido."*
+
+Quantos anagramas de (A,B,C,D,E) existem? / De quantos modos distintos 5 pessoas podem sentar em 5 lugares
+
+### **Fórmula**
+
+$$ Pn = n! $$
+
+### *Exemplo*:
+
+        P5 = 5!
+        P5 = 5.4.3.2.1
+        P5 = 120 Modos
+
+#### **Método do Tracinho**
+
+"Sempre que voce trocar um elemento de lugar e obter resultados diferentes pode usar o método do tracinho"
+
+$$(A,B,C,D,E) ≠ (E,B,C,D,A)$$
+
+Existem 5 posições com 5 possíveis elementos.
+E vão diminuindo conforme posições são tomadas.
+""O Calculo A seguir não envolve divisão"""
+
+$\frac{5}{1º}\times \frac{4}{2º}\times \frac{3}{3º}\times \frac{2}{4º}\times \frac{1}{5º} = 120$
+
+**120** Modos possíveis
+
+---
+### **Permutação com Repetição:**
+*"Há elementos repetidos"*
+
+"Qual é a diferença entre o número de anagramas da palavra ANAGRAMA e ARARA?"
+
+### **Fórmula**
+
+$$ Pn^{(a,b)} = \frac{n!}{a!b!} $$
+
+Onde:
+- n = Numero total de elementos
+- a = Numero de repetições do elemento repetido
+- b = Numero de repetições do elemento repetido
+...
+
+### *Exemplo*:
+
+ANAGRAMA: Possui 8 letras mas a letra A aparece 4 vezes.
+
+    P8^4 = 8! / 4!
+
+    P8^4 = 8.7.6.5.4! / 4!
+
+    P8^4 = 8.7.6.5
+
+    P8^4 = 1680
+
+ARARA: Possui 5 letras mas A aparece 3 vezes e a letra R aparece 2 vezes.
+
+    P5^(3,2) = 5! / 3! . 2!
+
+    P5^(3,2) = 5.4.3! / 3! . 2!
+
+    P5^(3,2) = 5.4 / 2.1
+
+    P5^(3,2) = 20 / 2
+
+    P5^(3,2) = 10
+
+Sendo assim:
+
+    1680 – 10 = 1670 a diferença 
+    entre o número de anagramas 
+
+---
+## **Combinação**
+*"A ordem não importa"*
+$(A,B,C) = (C,B,A)$
+
+Quantos trios posso formar com 5 pessoas (A,B,C,D,E).
+
+### **Fórmula**
+
+$$Cn,p = \frac{n!}{p!(n-p)!} $$
+
+Onde:
+- n = Número de Elementos
+- p = Número de Posições 
+
+### *Exemplo*:
+
+    C(5,3) = 5! / 3!(5-3)!
+
+    C(5,3) = 5.4.3! / 3!(5-3)1
+
+    C(5,3) = 5.4 / 2!
+
+    C(5,3) = 20 / 2
+    C(5,3) = 10
+
+    ou
+
+    C(5,3) = 5.4 / 2  (Divide o 4 para 2)
+    C(5,3) = 5.2 = 10
+
+---
+
+Permutação: A ordem importa (Exemplo: Classificação em uma corrida).
+Combinação: A ordem não importa (Exemplo: Seleção de um grupo).
+Regra do Produto: Contando possibilidades em várias etapas (Exemplo: Várias escolhas consecutivas).
+
+---
 
 # ***Medidas de tendência***
 
@@ -112,7 +293,7 @@ Em um grupo de dança, as idades dos integrantes foram coletadas e representadas
 
 ### **Fórmula**
 
-$x = \frac{a_1 + a_2 + a_3...an}{n}$
+$$x = \frac{a_1 + a_2 + a_3...an}{n}$$
 
 ### *Exemplo*:
 
@@ -165,7 +346,7 @@ Em medidas que há enorme diferença entre valores, vale mais a pena usar as med
 
 A média de 40.000 km esconde a enorme diferença entre as distâncias
 
-[*Link do Video*](https://www.youtube.com/watch?v=JEwd0Vlqapo&ab_channel=DicasdematSandroCuri%C3%B3)
+[*VARIÂNCIA e DESVIO PADRÃO (Sandro Curió)*](https://www.youtube.com/watch?v=JEwd0Vlqapo&ab_channel=DicasdematSandroCuri%C3%B3)
 
 ---
 
@@ -174,19 +355,18 @@ A média de 40.000 km esconde a enorme diferença entre as distâncias
 A variância mede a dispersão média dos dados em relação à média, expressa em unidades ao quadrado.
 
 ### **Fórmula**
-$σ2 = \frac{(x_1 - \overline{x})^2... + (x_n - \overline{x})^2}{n}$
+$$σ2 = \frac{(x_1 - \overline{x})^2... + (x_n - \overline{x})^2}{n}$$
 
 $\overline{x}$ = Média Aritmética
 
-O desvio/diferença $(x_n - \overline{x})$ tem que estar positivo em modulo. Para manter positivo basta calcular o MAIOR valor - o MENOR valor.
-Ou apenas trocar o sinal...
+O desvio/diferença $(x_n - \overline{x})$ tem que estar positivo em modulo. Para garantir que o desvio seja sempre positivo, podemos utilizar o valor absoluto dos desvios ao quadrado.
 
 ### *Exemplo 1*:
     (79K km, 1K km)
     x̅ = 40K
 
-    σ2 = (79 - 40)^2 + (40 - 1)^2 / 2
-    σ2 = 39^2 + (39)^2 / 2
+    σ2 = (79 - 40)² + (40 - 1)² / 2
+    σ2 = 39² + (39)² / 2
     σ2 = 1521 + 1521 / 2
     σ2 = 3042 / 2
     σ2 = 1521
@@ -197,11 +377,11 @@ Ou apenas trocar o sinal...
     x̅ = 21 / 3
     x̅ = 7
 
-    σ2 = (7 - 4)^2 + (7 - 7)^2 + (10 - 7)^2 / 2
-    σ2 = 3^2 + 0^2 + 3^2 / 2
-    σ2 = 9 + 0 + 9 / 2
-    σ2 = 18 / 2
-    σ2 = 9
+    σ2 = (7 - 4)² + (7 - 7)² + (10 - 7)² / 3
+    σ2 = 3² + 0² + 3² / 3
+    σ2 = 9 + 0 + 9 / 3
+    σ2 = 18 / 3
+    σ2 = 6
 
 ---
 
@@ -224,9 +404,8 @@ $σ = \sqrt{σ2}$
 ### *Exemplo 2*:
     (4 ,7 ,10)
     x̅ = 7
-    σ2 = 9
+    σ2 = 6
 
-    σ = √9
-    σ = 3
+    σ = √6
+    σ ≅ 2,44
 ---
-
