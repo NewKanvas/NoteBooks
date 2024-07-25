@@ -1,4 +1,4 @@
-# **MATEMÁTICA FINANCEIRA**
+****# **MATEMÁTICA FINANCEIRA**
 
 ## Porcentagem
 
@@ -10,9 +10,17 @@
 
 ## Amortização
 
+### Questão 1
+
 Uma empresa investiu R$ 300.000,00 em uma aplicação com prazo de 50 dias, a uma taxa de juro de 0,9% ao mês, no regime de juros simples. Considere mês comercial (30 dias) para essa operação, em todo o período. Em seguida, investiu todo o montante da operação anterior em outra aplicação, a uma taxa de juro composto de 1,0% ao mês, durante dois meses, resgatando todo o montante dessa segunda aplicação. Considere que ambas as operações são livres de impostos.
 
 Considerando-se o valor inicial da 1ª aplicação e o valor final da 2ª aplicação, o valor, em reais, que mais se aproxima do total de juros obtidos pela empresa é igual a:
+
+(A) 10.620,00
+(B) 10.840,00
+(C) 11.420,00
+(D) 12.151,00
+(E) 12.440,00
 
 ### Questão 2
 
@@ -20,11 +28,23 @@ Para compor o capital de giro de sua empresa, um empresário tomou um empréstim
 
 Considerando-se esse fluxo de capitais, o valor mais próximo, em reais, do saldo devedor desse empréstimo, em maio de 2024, é de:
 
+(A) 57.934,00
+(B) 58.193,00
+(C) 58.493,00
+(D) 58.943,00
+(E) 59.806,00
+
 ### Questão 3
 
 Uma determinada quantia foi emprestada a um cliente em janeiro de 2024, a uma taxa de 20% ao mês, no regime de juros compostos. Em fevereiro de 2024, não houve pagamentos. Em março de 2024, exatamente dois meses após a data do empréstimo, o cliente pagou R$ 1.440,00. E um mês após, em abril de 2024, pagou R$ 1.728,00, quitando a dívida.
 
 O valor do empréstimo realizado em janeiro de 2024, em reais, foi igual a:
+
+(A) 1.800,00
+(B) 1.900,00
+(C) 2.000,00
+(D) 2.100,00
+(E) 2.200,00
 
 ### Questão 4
 
@@ -32,9 +52,21 @@ Um cliente comprou um imóvel no valor de R$ 600.000,00. Para isso, pagou 20% de
 
 A soma das 12 primeiras prestações (referentes ao período de janeiro de 2024 a dezembro de 2024) a serem pagas, em reais, por esse cliente nesse financiamento será igual a:
 
+(A) 53.080,00
+(B) 53.340,00
+(C) 53.760,00
+(D) 53.900,00
+(E) 53.960,00
+
 ### Questão 5
 
 Em um certo país, a lei exige que sejam exibidas a taxa mensal e a taxa anual equivalente, no regime de juros compostos, junto ao preço do produto que será financiado. Considerando-se que um estabelecimento cobra uma taxa de juro mensal de 5% ao mês, essa taxa anual é, aproximadamente, de:
+
+(A) 34%
+(B) 48%
+(C) 60%
+(D) 80%
+(E) 96%
 
 
 # **PROBABILIDADE E ESTATÍSTICA**
