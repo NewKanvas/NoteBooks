@@ -1,4 +1,4 @@
-****# **MATEMÁTICA FINANCEIRA**
+**# **MATEMÁTICA FINANCEIRA**
 
 ## Porcentagem
 
